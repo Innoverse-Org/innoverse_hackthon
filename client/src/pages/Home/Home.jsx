@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import karen from "../../assets/karen.webp"
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -12,6 +13,7 @@ const Home = () => {
       description:
         "Discover amazing features and services tailored just for you",
       buttonText: "Get Started",
+      image: karen,
     },
     {
       id: 2,
@@ -20,6 +22,7 @@ const Home = () => {
       description:
         "Transforming ideas into reality with cutting-edge technology",
       buttonText: "Learn More",
+      image: karen,
     },
     {
       id: 3,
@@ -27,6 +30,7 @@ const Home = () => {
       title: "Join Our Community",
       description: "Connect with like-minded individuals and grow together",
       buttonText: "Sign Up",
+      image: karen,
     },
     {
       id: 4,
@@ -34,6 +38,7 @@ const Home = () => {
       title: "Premium Experience",
       description: "Enjoy top-notch services designed for your convenience",
       buttonText: "Explore",
+      image: karen,
     },
     {
       id: 5,
@@ -41,6 +46,7 @@ const Home = () => {
       title: "Stay Ahead of the Curve",
       description: "Access the latest trends and developments in the industry",
       buttonText: "Discover",
+      image: karen,
     },
   ]
 
@@ -70,14 +76,21 @@ const Home = () => {
               key={slide.id}
               className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
                 currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0"
-              } ${slide.bgColor} flex items-center justify-center`}
+              }`}
             >
-              <div className="text-center text-white p-8 max-w-2xl">
-                <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
-                <p className="text-xl mb-8">{slide.description}</p>
-                <button className="bg-white text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">
-                  {slide.buttonText}
-                </button>
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="absolute w-full h-full object-cover"
+              />
+              <div className="relative z-10 flex items-center justify-center h-full w-full">
+                <div className="text-center text-white p-8 max-w-2xl">
+                  <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
+                  <p className="text-xl mb-8">{slide.description}</p>
+                  <button className="bg-white text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">
+                    {slide.buttonText}
+                  </button>
+                </div>
               </div>
             </div>
           ))}
