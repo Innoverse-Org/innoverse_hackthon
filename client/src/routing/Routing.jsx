@@ -2,7 +2,7 @@ import React from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 
 // Pages
-import { Home, AboutUs, Enroll, ContactPage, Academics } from "../pages/index"
+import { Home, About, Enroll, Contact, Academics } from "../pages/index"
 // Components
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
