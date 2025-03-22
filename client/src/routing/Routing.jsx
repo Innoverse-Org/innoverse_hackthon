@@ -2,11 +2,7 @@ import React from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 
 // Pages
-import Home from "../pages/Home/Home"
-import About from "../pages/About/About"
-import Academics from "../pages/Academics/Academics"
-import Contact from "../pages/Contact/Contact"
-
+import { Home, About, Enroll, Contact, Academics } from "../pages/index"
 // Components
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
@@ -45,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "enroll",
+        element: <Enroll />,
       },
     ],
   },

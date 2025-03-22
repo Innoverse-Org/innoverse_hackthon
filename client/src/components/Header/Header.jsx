@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 const Header = () => {
-  const menuItems = ["Home", "About", "Contact", "Academics", "Enroll now"]
+  const menuItems = ["Home", "About", "Contact", "Academics", "Enroll"]
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
