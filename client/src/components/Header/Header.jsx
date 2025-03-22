@@ -12,14 +12,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-[#1a303f] text-white shadow-md">
+    <header className="bg-[#1a303f] text-white shadow-md p-2 ">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/">
               <img src="" alt="" />
-              <h1 className="text-2xl font-bold">SCHOOL OF AKATSUKI</h1>
+              <h1 className="text-2xl font-bold">Muktanga</h1>
             </Link>
           </div>
 
