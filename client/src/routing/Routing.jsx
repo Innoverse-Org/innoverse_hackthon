@@ -1,13 +1,11 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import React from "react"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 
 // Pages
-import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
-
+import { Home, About, Enroll, Contact, Academics } from "../pages/index"
 // Components
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
 
 // Layout component that includes navigation and renders children
 function Layout() {
@@ -17,9 +15,9 @@ function Layout() {
       <main>
         <Outlet /> {/* This is where child routes will render */}
       </main>
-    <Footer />
+      <Footer />
     </div>
-  );
+  )
 }
 
 // Create router with routes configuration
@@ -36,13 +34,25 @@ const router = createBrowserRouter([
         path: "about",
         element: <About />,
       },
+      {
+        path: "academics",
+        element: <Academics />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "enroll",
+        element: <Enroll />,
+      },
     ],
   },
-]);
+])
 
 // Main App component
 function Routing() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} />
 }
 
-export default Routing;
+export default Routing
