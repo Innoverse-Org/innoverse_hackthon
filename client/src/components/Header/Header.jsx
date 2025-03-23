@@ -1,34 +1,39 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import logo from "../../assets/logo1.png"
 
 const Header = () => {
   const menuItems = ["Home", "About", "Contact", "Academics", "Enroll"]
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-[#1a303f] text-white shadow-md p-2 ">
+    <header className="bg-[#023047] text-white shadow-md p-2">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/">
-              <img src="" alt="" />
-              <h1 className="text-2xl font-bold">Muktanga</h1>
-            </Link>
+            <NavLink to="/" className="flex items-center">
+              <img src={logo} alt="Logo" width={50} />
+              <h1 className="text-2xl font-medium text-[#ffb703]">Muktanga</h1>
+            </NavLink>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
-              <Link
+              <NavLink
                 key={item}
                 to={
                   item === "Home" ? "/" : item.toLowerCase().replace(" ", "-")
                 }
-                className="hover:text-secondary transition duration-300"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#fb8500] border-b-2 border-[#fb8500] transition duration-300"
+                    : "hover:text-[#fb8500] transition duration-300"
+                }
               >
                 {item}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
@@ -36,7 +41,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white focus:outline-none"
+              className="text-[#8ecae6] focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -68,15 +73,19 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="mt-4 md:hidden space-y-3 pb-3">
             {menuItems.map((item) => (
-              <Link
+              <NavLink
                 key={item}
                 to={
                   item === "Home" ? "/" : item.toLowerCase().replace(" ", "-")
                 }
-                className="block hover:text-secondary transition duration-300"
+                className={({ isActive }) =>
+                  isActive
+                    ? "block text-[#fb8500] border-b-2 border-[#fb8500] transition duration-300"
+                    : "block hover:text-[#fb8500] transition duration-300"
+                }
               >
                 {item}
-              </Link>
+              </NavLink>
             ))}
           </nav>
         )}

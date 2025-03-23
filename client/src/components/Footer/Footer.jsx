@@ -2,12 +2,14 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a303f] text-white">
+    <footer className="bg-[#023047] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">SCHOOL OF AKATSUKI</h3>
+            <h3 className="text-xl font-semibold mb-4 text-[#ffb703]">
+              MUKTANGA
+            </h3>
             <p className="mb-4">
               Committed to excellence in education, research, and innovation
               since 1980.
@@ -15,7 +17,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="hover:text-blue-400 transition duration-300"
+                className="hover:text-[#fb8500] transition duration-300"
               >
                 <span className="sr-only">Facebook</span>
                 <svg
@@ -28,7 +30,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="hover:text-blue-400 transition duration-300"
+                className="hover:text-[#fb8500] transition duration-300"
               >
                 <span className="sr-only">Twitter</span>
                 <svg
@@ -41,7 +43,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="hover:text-blue-400 transition duration-300"
+                className="hover:text-[#fb8500] transition duration-300"
               >
                 <span className="sr-only">Instagram</span>
                 <svg
@@ -54,7 +56,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="hover:text-blue-400 transition duration-300"
+                className="hover:text-[#fb8500] transition duration-300"
               >
                 <span className="sr-only">YouTube</span>
                 <svg
@@ -70,12 +72,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">QUICK LINKS</h3>
+            <h3 className="text-xl font-semibold mb-4 text-[#ffb703]">
+              QUICK LINKS
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Admissions
                 </a>
@@ -83,7 +87,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Academic Calendar
                 </a>
@@ -91,7 +95,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Campus Map
                 </a>
@@ -99,7 +103,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Library
                 </a>
@@ -107,7 +111,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Career Services
                 </a>
@@ -115,7 +119,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-blue-400 transition duration-300"
+                  className="hover:text-[#fb8500] transition duration-300"
                 >
                   Student Portal
                 </a>
@@ -125,11 +129,13 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">CONTACT US</h3>
+            <h3 className="text-xl font-semibold mb-4 text-[#ffb703]">
+              CONTACT US
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <svg
-                  className="h-6 w-6 mr-2 mt-0.5"
+                  className="h-6 w-6 mr-2 mt-0.5 text-[#8ecae6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -151,7 +157,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-6 w-6 mr-2"
+                  className="h-6 w-6 mr-2 text-[#8ecae6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -167,7 +173,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <svg
-                  className="h-6 w-6 mr-2"
+                  className="h-6 w-6 mr-2 text-[#8ecae6]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -179,14 +185,16 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span>info@schoolofakatsuki.edu</span>
+                <span>info@muktanga.edu</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">NEWSLETTER</h3>
+            <h3 className="text-xl font-semibold mb-4 text-[#ffb703]">
+              NEWSLETTER
+            </h3>
             <p className="mb-4">
               Subscribe to our newsletter for the latest updates.
             </p>
@@ -198,7 +206,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition duration-300"
+                className="bg-[#fb8500] hover:bg-[#219ebc] px-4 py-2 rounded transition duration-300"
               >
                 Subscribe
               </button>
@@ -206,10 +214,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-700 text-center">
+        <div className="mt-12 pt-8 border-t border-[#219ebc] text-center">
           <p>
-            &copy; {new Date().getFullYear()} School of Akatsuki. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Muktanga. All rights reserved.
           </p>
         </div>
       </div>

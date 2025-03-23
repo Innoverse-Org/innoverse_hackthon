@@ -242,7 +242,7 @@ export default function Academics() {
             {/* Section title */}
             <h2 className="text-2xl font-semibold">{section.title}</h2>
 
-            {/* 
+            {/*
               Chevron icon with animation
               - Rotates 180 degrees when section is open
               - Returns to original position when section is closed
@@ -256,7 +256,7 @@ export default function Academics() {
             />
           </div>
 
-          {/* 
+          {/*
             Conditional rendering of section content
             - Only displays when the section index matches the openSection state
             - Content is formatted with proper HTML structure

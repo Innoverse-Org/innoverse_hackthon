@@ -1,4 +1,8 @@
 import React from "react"
+import professor from "../../assets/professor_nakamura.webp"
+import elegant from "../../assets/elegant-man.webp"
+import brunette from "../../assets/brunette-businesswoman.webp"
+import { Link } from "react-router-dom"
 
 const AboutUs = () => {
   // Leadership team data
@@ -7,21 +11,21 @@ const AboutUs = () => {
       id: 1,
       name: "Dr. Hiroshi Nakamura",
       position: "Vice Chancellor",
-      image: "/client/src/assets/professor_nakamura.webp",
+      image: professor,
       bio: "Dr. Nakamura brings over 30 years of experience in higher education and research. Under his leadership, School of Akatsuki has risen to prominence in national rankings and established key international partnerships.",
     },
     {
       id: 2,
       name: "Prof. Mei Lin",
       position: "Pro Vice-Chancellor (Academic)",
-      image: "/images/leadership/pro-vc-academic.jpg",
+      image: brunette,
       bio: "Prof. Lin oversees all academic programs and ensures the highest standards of teaching excellence. Her innovative curriculum reforms have been recognized nationally.",
     },
     {
       id: 3,
       name: "Dr. Rajiv Sharma",
       position: "Pro Vice-Chancellor (Research)",
-      image: "/images/leadership/pro-vc-research.jpg",
+      image: elegant,
       bio: "Dr. Sharma has spearheaded our research initiatives, securing substantial grants and establishing six specialized research centers across disciplines.",
     },
   ]
@@ -78,16 +82,18 @@ const AboutUs = () => {
   ]
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-[#8ecae6]/10">
       {/* Hero Section */}
-      <div className="bg-primary text-white py-20">
+      <div className="bg-[#fdf0d5] text-black py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About School of Akatsuki
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Empowering minds, fostering innovation, and shaping the leaders of
-            tomorrow since 1980.
+            Muktangan English School & Jr.College, established on 12th June
+            1978, is one of the departments of Pune Vidyarthi Griha.As its name
+            suggests Muktangan is always committed itself to provide a free
+            ground to its students to flourish in all possible directions. Today
+            we see Muktangan under its umbrella holding varied avenues for its
+            students to grow and take eagles’ flights high up in the open sky.
           </p>
         </div>
       </div>
@@ -95,7 +101,7 @@ const AboutUs = () => {
       {/* Leadership Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#023047] text-center mb-12">
             Our Leadership
           </h2>
 
@@ -103,7 +109,7 @@ const AboutUs = () => {
             {leadershipTeam.map((leader) => (
               <div
                 key={leader.id}
-                className="bg-gray-50 rounded-lg shadow-md overflow-hidden transition transform hover:scale-105 duration-300"
+                className="bg-[#8ecae6]/10 rounded-lg shadow-md overflow-hidden transition transform hover:scale-105 duration-300"
               >
                 <div className="h-64 overflow-hidden">
                   <img
@@ -113,10 +119,10 @@ const AboutUs = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-primary">
+                  <h3 className="text-xl font-semibold text-[#023047]">
                     {leader.name}
                   </h3>
-                  <p className="text-blue-600 mb-3">{leader.position}</p>
+                  <p className="text-[#219ebc] mb-3">{leader.position}</p>
                   <p className="text-gray-700">{leader.bio}</p>
                 </div>
               </div>
@@ -126,9 +132,9 @@ const AboutUs = () => {
       </section>
 
       {/* Rankings & Accreditations Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#8ecae6]/10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary text-center mb-4">
+          <h2 className="text-3xl font-bold text-[#023047] text-center mb-4">
             Rankings & Accreditations
           </h2>
           <p className="text-gray-700 text-center max-w-3xl mx-auto mb-12">
@@ -142,9 +148,9 @@ const AboutUs = () => {
                 key={item.id}
                 className="bg-white rounded-lg shadow-md p-6 text-center"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#8ecae6] flex items-center justify-center">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#023047]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -184,7 +190,7 @@ const AboutUs = () => {
                     )}
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-2">
+                <h3 className="text-xl font-semibold text-[#023047] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-700">{item.description}</p>
@@ -194,7 +200,7 @@ const AboutUs = () => {
 
           {/* Awards */}
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-center mb-8">
+            <h3 className="text-2xl font-bold text-center mb-8 text-[#023047]">
               Recent Awards
             </h3>
             <div className="max-w-3xl mx-auto">
@@ -205,12 +211,12 @@ const AboutUs = () => {
                     className="p-4 flex justify-between items-center"
                   >
                     <div>
-                      <h4 className="font-semibold text-primary">
+                      <h4 className="font-semibold text-[#023047]">
                         {award.title}
                       </h4>
                       <p className="text-gray-600">{award.organization}</p>
                     </div>
-                    <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                    <span className="bg-[#ffb703] text-[#023047] text-sm font-medium px-3 py-1 rounded-full">
                       {award.year}
                     </span>
                   </li>
@@ -226,10 +232,10 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Mission */}
-            <div className="bg-blue-50 rounded-lg shadow-md p-8">
-              <div className="w-16 h-16 mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+            <div className="bg-[#8ecae6]/20 rounded-lg shadow-md p-8">
+              <div className="w-16 h-16 mb-6 rounded-full bg-[#219ebc] flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-blue-600"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -243,7 +249,7 @@ const AboutUs = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-4">
+              <h2 className="text-2xl font-bold text-[#023047] mb-4">
                 Our Mission
               </h2>
               <p className="text-gray-700 mb-4">
@@ -261,10 +267,10 @@ const AboutUs = () => {
             </div>
 
             {/* Vision */}
-            <div className="bg-purple-50 rounded-lg shadow-md p-8">
-              <div className="w-16 h-16 mb-6 rounded-full bg-purple-100 flex items-center justify-center">
+            <div className="bg-[#ffb703]/20 rounded-lg shadow-md p-8">
+              <div className="w-16 h-16 mb-6 rounded-full bg-[#ffb703] flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-purple-600"
+                  className="w-8 h-8 text-[#023047]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -284,7 +290,7 @@ const AboutUs = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-4">
+              <h2 className="text-2xl font-bold text-[#023047] mb-4">
                 Our Vision
               </h2>
               <p className="text-gray-700 mb-4">
@@ -301,10 +307,10 @@ const AboutUs = () => {
             </div>
 
             {/* Goals */}
-            <div className="bg-green-50 rounded-lg shadow-md p-8">
-              <div className="w-16 h-16 mb-6 rounded-full bg-green-100 flex items-center justify-center">
+            <div className="bg-[#fb8500]/20 rounded-lg shadow-md p-8">
+              <div className="w-16 h-16 mb-6 rounded-full bg-[#fb8500] flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-green-600"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -318,7 +324,7 @@ const AboutUs = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-2xl font-bold text-primary mb-4">
+              <h2 className="text-2xl font-bold text-[#023047] mb-4">
                 Our Goals
               </h2>
               <p className="text-gray-700 mb-4">
@@ -329,7 +335,7 @@ const AboutUs = () => {
               <ul className="text-gray-700 space-y-2">
                 <li className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-600 mr-2 mt-0.5"
+                    className="w-5 h-5 text-[#fb8500] mr-2 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -346,7 +352,7 @@ const AboutUs = () => {
                 </li>
                 <li className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-600 mr-2 mt-0.5"
+                    className="w-5 h-5 text-[#fb8500] mr-2 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -362,7 +368,7 @@ const AboutUs = () => {
                 </li>
                 <li className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-600 mr-2 mt-0.5"
+                    className="w-5 h-5 text-[#fb8500] mr-2 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -378,7 +384,7 @@ const AboutUs = () => {
                 </li>
                 <li className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-600 mr-2 mt-0.5"
+                    className="w-5 h-5 text-[#fb8500] mr-2 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -394,7 +400,7 @@ const AboutUs = () => {
                 </li>
                 <li className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-600 mr-2 mt-0.5"
+                    className="w-5 h-5 text-[#fb8500] mr-2 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -415,7 +421,7 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-primary text-white">
+      <section className="py-12 bg-[#fdf0d5] text-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Join Our Academic Community
@@ -425,15 +431,15 @@ const AboutUs = () => {
             transform lives through knowledge and innovation.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="#"
-              className="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition duration-300"
+            <Link
+              to="/enroll"
+              className="bg-[#fb8500] text-white hover:bg-[#fb8500]/90 px-8 py-3 rounded-md font-semibold transition duration-300"
             >
               Apply Now
-            </a>
+            </Link>
             <a
               href="#"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-primary px-8 py-3 rounded-md font-semibold transition duration-300"
+              className="bg-transparent border-2 border-[#ffb703] text-[#ffb703] hover:bg-[#ffb703] hover:text-[#023047] px-8 py-3 rounded-md font-semibold transition duration-300"
             >
               Schedule a Visit
             </a>
