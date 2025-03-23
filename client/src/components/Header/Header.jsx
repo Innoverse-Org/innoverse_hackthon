@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center">
               <img src={logo} alt="Logo" width={50} />
-              <h1 className="text-2xl font-medium text-[#ffb703]">Muktanga</h1>
+              <h1 className="text-2xl font-medium text-[#ffb703]">Muktangan</h1>
             </NavLink>
           </div>
 
